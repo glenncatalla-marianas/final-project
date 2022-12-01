@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.header {
+    color: white;
+    background: #546A76;
+    font-size: 32px;
+    text-align: center;
+    padding: 24px;
+}
+
+#navbar {
+    background-color: #090909;
+    overflow: hidden;
+}
+
+#navbar a {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 16px 16px;
+}
+
+#navbar a:hover {
+    color: white;
+    background-color: #BC6C25;
+}
+
+#navbar a.active {
+    color: black;
+    background-color: #FFA400;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 64px;
+}
+
+.weight {
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(130, 128, 129, 0.5), 0 12px 40px 0 rgba(130, 128, 129, 0.5);
+    float: left;
+    width: 48%;
+    padding: 42px;
+    height: 800px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.calis {
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(130, 128, 129, 0.5), 0 12px 40px 0 rgba(130, 128, 129, 0.5);
+    float: right;
+    width: 48%;
+    padding: 42px;
+    height: 800px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.row {
+    margin: 72px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    text-align: left;
+    display: table;
+    margin: 0 auto;
+    line-height: 150%;
+}
+
+.footer {
+    background-color: rgb(200, 200, 200);
+    font-size: 12px;
+    text-align: center;
+    line-height: 150%;
+    padding: 18px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .weight {
+        width: 100%;
+        text-align: center;
+    }
+
+    .calis {
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #navbar {
+        position: static;
+    }
+
+    #navbar a {
+        float: none;
+        width: 100%;
+    }
+}
