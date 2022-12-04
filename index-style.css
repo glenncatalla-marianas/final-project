@@ -8,9 +8,16 @@ body {
     margin: 0;
 }
 
+.header-image {
+    background-image: url(./images/0header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
 .header {
     color: white;
-    background: #546A76;
     font-size: 32px;
     text-align: center;
     padding: 24px;
@@ -19,6 +26,7 @@ body {
 #navbar {
     background-color: #090909;
     overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(130, 128, 129, 0.5), 0 12px 40px 0 rgba(130, 128, 129, 0.5);
 }
 
 #navbar a {
@@ -108,12 +116,24 @@ body {
     background-color: royalblue;
 }
 
-img {
+#pic {
     display: block;
     height: auto;
     max-width: 100%;
     border-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(130, 128, 129, 1), 0 12px 40px 0 rgba(130, 128, 129, 1);
+}
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+.video {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    left: 10px;
 }
 
 .footer {
@@ -133,7 +153,7 @@ img {
         text-align: center;
     }
 
-    img {
+    #pic {
         margin: auto;
     }
 
@@ -142,7 +162,7 @@ img {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     #navbar {
         position: static;
